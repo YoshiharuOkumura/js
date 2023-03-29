@@ -104,7 +104,6 @@
     animate: function () {
       for (var i = 0; i < this.sizeDatas.length; i++) {
         var data = this.sizeDatas[i];
-        console.log(data)
         self.conBox.eq(i).css('z-index', data['z-index']);
         self.conBox.eq(i).stop().animate(data, 500);
       }
@@ -171,7 +170,6 @@
           'left': x1 - width * (1 - scaleX / 2),
         };
       }
-      console.log(this.sizeDatas);
     },
     attachEvent: function () {
       var ws = this;
